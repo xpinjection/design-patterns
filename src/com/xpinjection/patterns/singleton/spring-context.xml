@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+    <bean id="client" class="com.xpinjection.patterns.singleton.ModernSingletonClient">
+        <constructor-arg ref="registry"/>
+    </bean>
+
+    <bean id="registry" class="com.xpinjection.patterns.singleton.ModernServiceRegistry"/>
+
+    <bean id="oldRegistry" class="com.xpinjection.patterns.singleton.canonical.ServiceRegistry"
+          factory-method="getInstance"/>
+</beans>
