@@ -17,8 +17,8 @@ import java.util.Map;
  * @version 1.0
  */
 public class Request {
-    private long userId;
-    private Map<String, String> params = new HashMap<>();
+    private final long userId;
+    private final Map<String, String> params = new HashMap<>();
 
     public Request(long userId) {
         this.userId = userId;

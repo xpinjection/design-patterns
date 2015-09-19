@@ -15,9 +15,11 @@ import com.xpinjection.patterns.strategy.canonical.Position;
  * @author Alimenkou Mikalai
  * @version 1.0
  */
-public class TrafficCalculationStrategies {
+public final class TrafficCalculationStrategies {
     private static final int PAGE_SIZE = 10;
     private static final double[] TOP_RANKS = {0.5, 0.3, 0.1, 0.05, 0.05};
+
+    private TrafficCalculationStrategies() {}
 
     public static int calculateTrafficForPage(Position position) {
         int rank = position.getRank();
