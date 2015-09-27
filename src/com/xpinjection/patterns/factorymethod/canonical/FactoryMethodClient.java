@@ -13,7 +13,7 @@ package com.xpinjection.patterns.factorymethod.canonical;
  * @author Alimenkou Mikalai
  * @version 1.0
  */
-public class TemplateMethodClient {
+public class FactoryMethodClient {
     public static void main(String[] args) {
         DocumentFactory factory = new JsonDocumentFactory();
         Document document = factory.create("USER");

@@ -16,7 +16,7 @@ import java.util.Map;
  * @author Alimenkou Mikalai
  * @version 1.0
  */
-public class ServiceRegistry {
+public final class ServiceRegistry {
     private static final ServiceRegistry INSTANCE = new ServiceRegistry();
 
     public static ServiceRegistry getInstance() {
@@ -24,6 +24,8 @@ public class ServiceRegistry {
     }
 
     private final Map<String, NamedService> services = new HashMap<>();
+
+    private ServiceRegistry() {}
 
     public void register(NamedService service) {
         String name = service.getName();
