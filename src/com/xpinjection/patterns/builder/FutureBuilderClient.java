@@ -13,7 +13,7 @@ package com.xpinjection.patterns.builder;
  * @author Alimenkou Mikalai
  * @version 1.0
  */
-public class FuturePrototypeClient {
+public class FutureBuilderClient {
     /** With hope for better Java ;)
      *
      * public static void main(String[] args) {

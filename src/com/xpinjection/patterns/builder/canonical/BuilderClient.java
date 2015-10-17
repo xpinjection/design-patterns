@@ -13,7 +13,7 @@ package com.xpinjection.patterns.builder.canonical;
  * @author Alimenkou Mikalai
  * @version 1.0
  */
-public class PrototypeClient {
+public class BuilderClient {
     public static void main(String[] args) {
         Cluster cluster = Cluster.runtimeBuilder()
                 .addContactPoints("localhost").withPort(3165)
