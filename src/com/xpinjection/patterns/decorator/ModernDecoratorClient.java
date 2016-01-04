@@ -34,7 +34,7 @@ public class ModernDecoratorClient {
             long startTime = System.currentTimeMillis();
             int count = counter.count(s);
             long endTime = System.currentTimeMillis();
-            System.out.println("Counting took " + (startTime - endTime) + " ms");
+            System.out.println("Counting took " + (endTime - startTime) + " ms");
             return count;
         };
     }
