@@ -27,6 +27,6 @@ public class ModernMacro {
     }
 
     public void run() {
-        commands.stream().forEach(Command::execute);
+        commands.forEach(Command::execute);
     }
 }

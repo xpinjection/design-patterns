@@ -11,8 +11,8 @@ package com.xpinjection.patterns.chain;
 
 import com.xpinjection.patterns.chain.canonical.Request;
 
-import java.util.Arrays;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 /**
  * @author Alimenkou Mikalai
@@ -26,7 +26,7 @@ public class ModernChainClient {
 
     @SafeVarargs
     public static Consumer<Request> chain(Consumer<Request>... handlers) {
-        return Arrays.asList(handlers).stream()
+        return Stream.of(handlers)
                 .reduce(Consumer::andThen).get();
     }
 
