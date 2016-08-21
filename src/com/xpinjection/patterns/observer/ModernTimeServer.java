@@ -34,6 +34,6 @@ public class ModernTimeServer implements Observer {
 
     public void reportTime() {
         Event event = new Event(new SimpleDateFormat(TIME_FORMAT).format(new Date()));
-        listeners.stream().forEach(listener -> listener.onEvent(event));
+        listeners.forEach(listener -> listener.onEvent(event));
     }
 }
