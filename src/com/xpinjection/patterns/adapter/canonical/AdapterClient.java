@@ -13,8 +13,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import static java.util.Arrays.asList;
+import java.util.stream.Stream;
 
 /**
  * @author Alimenkou Mikalai
@@ -25,7 +24,7 @@ public class AdapterClient {
         ExecutorService executor = Executors.newFixedThreadPool(3);
 
         AtomicInteger counter = new AtomicInteger();
-        asList("af", "bdf", "c").stream()
+        Stream.of("af", "bdf", "c")
                 .map(s -> new CharCounterTask(s, counter))
                 .forEach(new ExecutorConsumerAdaptor(executor));
 

@@ -26,7 +26,8 @@ public class ModernChainClient {
 
     @SafeVarargs
     public static Consumer<Request> chain(Consumer<Request>... handlers) {
-        return Stream.of(handlers).reduce(Consumer::andThen).get();
+        return Stream.of(handlers)
+                .reduce(Consumer::andThen).get();
     }
 
     private static void log(Request request) {
