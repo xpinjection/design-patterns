@@ -24,8 +24,9 @@ public class ModernDecoratorClient {
         int digitsCount = counter.count("fd6j78fh19kj");
         System.out.println(digitsCount + " digits found");
 
-        Function<String, String> trimmer = String::trim;
-        digitsCount = trimmer.andThen(new NaiveDigitCounter()::count).apply(" \n 123 \t");
+        digitsCount = ((Function<String, String>) String::trim)
+                .andThen(new NaiveDigitCounter()::count)
+                .apply(" \n 123 \t");
         System.out.println(digitsCount + " digits found");
     }
 
