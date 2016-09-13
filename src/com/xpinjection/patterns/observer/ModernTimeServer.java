@@ -10,30 +10,29 @@
 package com.xpinjection.patterns.observer;
 
 import com.xpinjection.patterns.observer.canonical.Event;
-import com.xpinjection.patterns.observer.canonical.EventListener;
-import com.xpinjection.patterns.observer.canonical.Observer;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.function.Consumer;
 
 /**
  * @author Alimenkou Mikalai
  * @version 1.0
  */
-public class ModernTimeServer implements Observer {
+public class ModernTimeServer implements ModernObserver {
     private static final String TIME_FORMAT = "HH:mm:ss";
 
-    private final Queue<EventListener> listeners = new ConcurrentLinkedQueue<>();
+    private final Queue<Consumer<Event>> listeners = new ConcurrentLinkedQueue<>();
 
     @Override
-    public void addListener(EventListener listener) {
+    public void addListener(Consumer<Event> listener) {
         listeners.add(listener);
     }
 
     public void reportTime() {
         Event event = new Event(new SimpleDateFormat(TIME_FORMAT).format(new Date()));
-        listeners.forEach(listener -> listener.onEvent(event));
+        listeners.forEach(listener -> listener.accept(event));
     }
 }
