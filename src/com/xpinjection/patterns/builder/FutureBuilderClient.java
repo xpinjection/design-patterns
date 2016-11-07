@@ -17,7 +17,7 @@ public class FutureBuilderClient {
     /** With hope for better Java ;)
      *
      * public static void main(String[] args) {
-     *      Cluster cluster = new Cluster("localhost").setPort(3165)
+     *      FutureCluster cluster = new FutureCluster("localhost").setPort(3165)
      *                .setRetryAttempts(3).setMetricsEnabled(false);
      * }
      */
