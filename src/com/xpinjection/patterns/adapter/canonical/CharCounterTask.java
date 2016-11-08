@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : CounterTask
-//  Created       : 14.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.adapter.canonical;
 
 import java.util.concurrent.atomic.AtomicInteger;

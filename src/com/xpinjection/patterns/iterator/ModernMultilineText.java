@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : ModernMultilineText
-//  Created       : 13.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.iterator;
 
 import java.util.Spliterator;
@@ -17,7 +8,6 @@ import java.util.stream.StreamSupport;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class ModernMultilineText implements ModernText {
     private final String text;

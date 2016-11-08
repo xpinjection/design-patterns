@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : ModernUserRestorer
-//  Created       : 13.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.templatemethod;
 
 import com.xpinjection.patterns.templatemethod.canonical.User;
@@ -16,7 +7,6 @@ import java.util.function.ToLongFunction;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class ModernUserRestorer {
     private static final String DELIMITER = ":";

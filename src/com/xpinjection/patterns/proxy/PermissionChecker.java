@@ -1,19 +1,9 @@
-// ============================================================================
-//  File          : PermissionChecker
-//  Created       : 13.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.proxy;
 
 import com.xpinjection.patterns.proxy.canonical.Order;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class PermissionChecker {
     private final ThreadLocal<Long> currentUser = new ThreadLocal<>();

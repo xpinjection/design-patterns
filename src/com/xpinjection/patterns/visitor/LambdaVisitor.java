@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : LambdaVisitor
-//  Created       : 13.09.2016   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2016 XP Injection, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.visitor;
 
 import java.util.HashMap;
@@ -15,7 +6,6 @@ import java.util.function.Function;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class LambdaVisitor<A> implements Function<Object, A> {
     private final Map<Class<?>, Function<Object, A>> functions = new HashMap<>();

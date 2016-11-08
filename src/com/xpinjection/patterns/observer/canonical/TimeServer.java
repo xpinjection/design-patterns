@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : TimeObserver
-//  Created       : 13.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.observer.canonical;
 
 import java.text.SimpleDateFormat;
@@ -16,7 +7,6 @@ import java.util.List;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class TimeServer implements Observer {
     private static final String TIME_FORMAT = "HH:mm:ss";

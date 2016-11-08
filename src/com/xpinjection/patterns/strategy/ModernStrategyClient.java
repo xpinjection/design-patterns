@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : ModernStrategyClient
-//  Created       : 13.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.strategy;
 
 import com.xpinjection.patterns.strategy.canonical.Position;
@@ -15,7 +6,6 @@ import java.util.function.ToIntFunction;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class ModernStrategyClient {
     private final ToIntFunction<Position> calculator;

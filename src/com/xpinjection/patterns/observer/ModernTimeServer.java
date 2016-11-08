@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : ModernTimeServer
-//  Created       : 14.09.2015   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2015 Zoral, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.observer;
 
 import com.xpinjection.patterns.observer.canonical.Event;
@@ -19,7 +10,6 @@ import java.util.function.Consumer;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class ModernTimeServer implements ModernObserver {
     private static final String TIME_FORMAT = "HH:mm:ss";

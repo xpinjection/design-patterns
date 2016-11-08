@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : ModernVisitorClient
-//  Created       : 13.09.2016   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2016 XP Injection, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.visitor;
 
 import com.xpinjection.patterns.visitor.canonical.Circle;
@@ -19,7 +10,6 @@ import java.util.function.Function;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class ModernVisitorClient {
     private final static Function<Object, Double> AREA_CALCULATOR = new LambdaVisitor<Double>()

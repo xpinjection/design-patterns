@@ -1,12 +1,3 @@
-// ============================================================================
-//  File          : VisitorClient
-//  Created       : 13.09.2016   
-//  Description   :
-//  Modifications :
-//
-// ============================================================================
-//  Copyright(c) 2016 XP Injection, Ukraine
-// ============================================================================
 package com.xpinjection.patterns.visitor.canonical;
 
 import java.util.Arrays;
@@ -14,7 +5,6 @@ import java.util.List;
 
 /**
  * @author Alimenkou Mikalai
- * @version 1.0
  */
 public class VisitorClient {
     public static void main(String[] args) {
