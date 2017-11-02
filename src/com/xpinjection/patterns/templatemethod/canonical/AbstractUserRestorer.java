@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 public abstract class AbstractUserRestorer {
     private static final String DELIMITER = ":";
 
-    public User restore(String serialized) {
+    public final User restore(String serialized) {
         StringTokenizer tokenizer = new StringTokenizer(serialized, DELIMITER);
         validate(tokenizer);
         User user = parse(tokenizer);

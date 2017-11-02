@@ -1,7 +1,7 @@
 package com.xpinjection.patterns.singleton.canonical;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * @author Alimenkou Mikalai
@@ -13,7 +13,7 @@ public final class ServiceRegistry {
         return INSTANCE;
     }
 
-    private final Map<String, NamedService> services = new HashMap<>();
+    private final ConcurrentMap<String, NamedService> services = new ConcurrentHashMap<>();
 
     private ServiceRegistry() {}
 

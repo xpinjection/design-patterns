@@ -27,12 +27,12 @@ public class ModernVisitorClient {
 
         double totalArea = figures.stream()
                 .map(AREA_CALCULATOR)
-                .reduce(0.0, (v1, v2) -> v1 + v2);
+                .reduce(0.0, Double::sum);
         System.out.println("Total area = " + totalArea);
 
         double totalPerimeter = figures.stream()
                 .map(PERIMETER_CALCULATOR)
-                .reduce(0.0, (v1, v2) -> v1 + v2);
+                .reduce(0.0, Double::sum);
         System.out.println("Total perimeter = " + totalPerimeter);
     }
 }

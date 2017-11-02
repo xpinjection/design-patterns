@@ -2,14 +2,14 @@ package com.xpinjection.patterns.singleton;
 
 import com.xpinjection.patterns.singleton.canonical.NamedService;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 /**
  * @author Alimenkou Mikalai
  */
 public class ModernServiceRegistry {
-    private final Map<String, NamedService> services = new HashMap<>();
+    private final ConcurrentMap<String, NamedService> services = new ConcurrentHashMap<>();
 
     public void register(NamedService service) {
         String name = service.getName();
